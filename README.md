@@ -1,13 +1,13 @@
 #***FROGGER ARCADE GAME CLONE***  
 ###Udacity Nanodegree P3
 
-####HOW TO RUN THE GAME:
+#####HOW TO RUN THE GAME:
 
 1.) Select the index.html file from the following library ".../Brendan_Carlin-Project_3/index.html"  
 2.) The game will load in your web browser  
 
 
-####HOW TO PLAY THE GAME:
+#####HOW TO PLAY THE GAME:
 
 Objective-- Your player needs to make it to the water without being hit by bugs!
 
