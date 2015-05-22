@@ -1,5 +1,5 @@
 #***FROGGER ARCADE GAME CLONE***  
-###Udacity Nanodegree P3
+
 
 #####HOW TO RUN THE GAME:
 
