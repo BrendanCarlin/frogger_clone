@@ -3,7 +3,7 @@
 
 #####HOW TO RUN THE GAME:
 
-1.) Select the index.html file from the following library ".../Brendan_Carlin-Project_3/index.html"  
+1.) Select the index.html file from the following library ".../frogger_clone_master/index.html"  
 2.) The game will load in your web browser  
 
 
