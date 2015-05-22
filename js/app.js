@@ -12,7 +12,7 @@ var Enemy = function(x, y) {
 };
 
 //set collision proximity for enemies
-var collisionProx = 25;
+var COLLISION_PROX = 55;
 
 // Update the enemy's position, required method for game
 // Parameter: dt, a time delta between ticks
@@ -22,15 +22,15 @@ Enemy.prototype.update = function(dt) {
         this.x += this.speed * dt;
     } else {
         this.x = -5;
-    };
+    }
 
     //If the player comes within 25px of an enemy's x and y coordinates, reset the game
-    if (player.y >= this.y - collisionProx && player.y <= this.y + collisionProx) {
-        if (player.x >= this.x - collisionProx && player.x <= this.x + collisionProx) {
+    if (player.y >= this.y - COLLISION_PROX && player.y <= this.y + COLLISION_PROX) {
+        if (player.x >= this.x - COLLISION_PROX && player.x <= this.x + COLLISION_PROX) {
             alert("INFECTED! GAME OVER")
             player.reset();
         }
-    };
+    }
 };
 
 // Draw the enemy on the screen, required method for game
@@ -55,12 +55,12 @@ Player.prototype.update = function() {
         this.y = this.y - 83;
     } else if (this.ctlKey === 'down' && this.y != 400){
         this.y = this.y + 83;
-    };
+    }
     this.ctlKey = null;
     if (this.y < 25) {
         alert("You made it -- these bugs hate water! Congratulations!");
         this.reset();
-    };
+    }
 };
 
 //Input handler for player object
@@ -69,7 +69,7 @@ Player.prototype.handleInput = function(e){
 };
 
 //Reset player to beginning position
-Object.prototype.reset = function() {
+Player.prototype.reset = function() {
     player.x = 200;
     player.y = 400;
 };
